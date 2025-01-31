@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*reset CSS*/
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /*estilos perfil usuario*/
+
+            /*datos usuario*/
+            h1, h2, h3, h4, h5, h6, p{
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: justify;
+            }
+            
+
+            .usuario{
+                display: flex;
+                justify-content: center space-between;
+                align-items: center;
+                gap: 30px;
+                padding-left: 100px;
+                padding-right: 100px;
+            }
+
+            .foto_perfil{
+
+                display: flex;
+                height: 200px;
+            }
+
+            .datos_usuario{
+                height: 130px;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+
+
+        .prestados{
+            padding-left: 100px;
+            padding-right: 100px;
+        } 
+
+        .adquiridos{
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+        .grid-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+        }
+
+        .card{
+        background-color: gray;
+        color: white;
+        padding: 20px;
+
+        flex-grow: 1; /* permite al box crecer*/
+        flex-shrink: 0; /* permite hacerse más pequeño*/
+        flex-basis: 200px; /*valor inicial de nuestro elemento*/
+
+        flex: 1 0 200px; /* esto es igual a las 3 reglas de arriba*/
+        }
+
+        .Card{
+        box-shadow: 2px 2px 5px #bbbbbb;
+        margin: 5px;
+        border-radius: 5px; 
+        }
+
+        .libro{
+            height: 100px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!--Header-->
+        <div class="header">
+
+        </div>
+        
+        <!--Foto y descripción usuário-->
+        <div class="usuario">
+
+            <img class="foto_perfil"  src="./IMG_PERFILDEUSUARIO/FOTO_USUARIO.png" alt="foto_roberto">
+
+
+            <div class="datos_usuario">
+                <h2>Roberto Morrón</h2>
+                <h3>Asturias</h3>
+                <div class="descripcion">
+                    <h4>Descripción</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta laborum, sed dignissimos alias quod molestiae eum vero neque fugit earum, accusamus vitae odio! Exercitationem distinctio dicta ipsum sapiente iste omnis?</p>
+                </div>
+            </div>
+
+        </div>
+        <!--Info libros-->
+        <div class="prestados">
+            <H2>Prestados</H2>
+            <div class="section Card">
+                <div class="grid-container">
+                    <div class="card">tarjeta 1</div>
+                    <div class="card">tarjeta 2</div>
+                    <div class="card">tarjeta 3</div>
+                    <div class="card">tarjeta 4</div>
+                    <div class="card">tarjeta 5</div>
+                    <div class="card">tarjeta 6</div>
+                </div>
+            
+            </div>
+
+        </div>
+
+        <div class="adquiridos">
+            <h2>Adquiridos</h2>
+            <div class="section Card">
+                <div class="grid-container">
+                    <div class="card"><img class="libro" src="./IMG_LIBROS/41+9KA2eMSL._SY445_SX342_.jpg" alt=""></div>
+                    <div class="card">tarjeta 2</div>
+                    <div class="card">tarjeta 3</div>
+                    <div class="card">tarjeta 4</div>
+                    <div class="card">tarjeta 5</div>
+                    <div class="card">tarjeta 6</div>
+                </div>
+            
+            </div>
+
+        </div>
+
+        <!--Footer-->
+        <div class="footer">
+
+        </div>
+
+        
+
+    </div>
+
+
+    
+</body>
+</html>

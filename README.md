@@ -1,6 +1,10 @@
 # books-nest-grupo4
 
-#41444B
-#52575D
-#FDDB3A
-#F6F4E6
+# Paleta de colores
+
+Cinza 01:  #41444B
+Cinza 02:  #52575D
+Amarillo:  #FDDB3A
+Blanco:    #FFFFFF
+
+Fuente: Montserrat

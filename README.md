@@ -6,6 +6,16 @@
 #FDDB3A
 #F6F4E6
 
+# Paleta de colores
+
+Cinza 01:  #41444B
+Cinza 02:  #52575D
+Amarillo:  #FDDB3A
+Blanco:    #FFFFFF
+
+Fuente: Montserrat
+>>>>>>> 4f38b2b57b9c7097082d03518f078c295b068754
+
 # Libros
 - El arte de la guerra: https://www.amazon.es/El-arte-guerra-Sun-Tzu/dp/8494709208/ref=sr_1_7?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=38J0JAIFYMZ0O&dib=eyJ2IjoiMSJ9.jwsH3EzocGpRw_Mxn_t3VbY4L_hmWGeltnMbXho_GxgNMWLuWiwwtdXqlrLq5IK__Dp1c4XfAVBl736Y-OkgDYBJrMAs3RLtDP63ClxI3R47RsMRMUzCPp9hs5c5yr03tYNnnBK2_I5ju_3h3s-cI7dQ6pdjNI_LRaytu8WMchlml_o4Foqvcx2ByadIkeoHlXjcar_CmM7n80-Aa7A59sK3tQxNMesdsg0e-VG8USPdqVKaNMpqiyo6dsCfB3cV_xw1OxNV3Ldbev0DYChJooVgDP3FVdjaPO2_0TGT09G1zXW6sJkF__WvuVNgdWF9StfSU6Gxe_fK_lW9wsf9aG-kjHABE-9La4k_CX2acnWxFTB6oWGn1EQYaz_8NSSGlj7fKh3YEtewBOx4FFpBa7uh7u4Al0kMXQvd5fHzS8vc7uLEEidQsU_O3TtlVrqo.50FNDQ5Kk9hm6q__20QQVUq-3qrZOq7ezbvPQbHVI4I&dib_tag=se&keywords=libros&qid=1738337599&sprefix=libros%2Caps%2C110&sr=8-7
 
@@ -27,12 +37,4 @@
 
 - Minimalismo emocional: https://www.amazon.es/Minimalismo-emocional-LIBROS-CABECERA-Fargas/dp/8419996165/ref=pd_sbs_d_sccl_3_6/262-2084158-4782164?pd_rd_w=cMjhe&content-id=amzn1.sym.62ea8a6e-5533-4fb8-ac84-61585eb8c5e6&pf_rd_p=62ea8a6e-5533-4fb8-ac84-61585eb8c5e6&pf_rd_r=YBG7BAPBGC61PT65JFAB&pd_rd_wg=j9ENv&pd_rd_r=c4f59f7b-4dee-418a-9633-7329e7b3c9f0&pd_rd_i=8419996165&psc=1
 =======
-# Paleta de colores
 
-Cinza 01:  #41444B
-Cinza 02:  #52575D
-Amarillo:  #FDDB3A
-Blanco:    #FFFFFF
-
-Fuente: Montserrat
->>>>>>> 4f38b2b57b9c7097082d03518f078c295b068754

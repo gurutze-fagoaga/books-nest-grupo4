@@ -1,11 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PRUEBA HEADER Y FOOTER</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Helvetica;
+            box-sizing: border-box;
+        }
+
+        header,
+        footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #f1f1f1;
+            border: 2px solid #FDDB3A;
+            border-radius: 10px;
+            margin: 10px;
+            box-shadow: 2px 2px 5px; color: black;
+
+        }
+
+        header {
+            margin-bottom: 80vh;
+        }
+
+        .nav-items {
+            display: flex;
+            gap: 15px;
+        }
+
+        
+        .nav-items input {
+            padding: 10px 15px;
+            border: 2px solid #FDDB3A;
+            border-radius: 5px;
+            background-color: white;
+            font-size: 14px;
+            cursor: pointer;
+            box-shadow: 5px 2px 5px; color: black;
+            width: 200px;
+        }
+        .nav-items button {
+            border-radius: 10px; color: black;
+        }
+
+        footer .links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-size: 14px;
+        }
+
+        .logo1{
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        .logo2{
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            border: 2px solid #FDDB3A;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .content {
+            display: flex;
+            
+
+        }
+        
+</style>
 </head>
+
 <body>
+
+    <header>
+        <div class="logo1">Logo</div>
+        <div class="nav-items">
+            <input type="text" placeholder="buscar..."></div>
+            <div>
+            <button>Catálogo</button>
+            <button>Novedades</button>
+            <button>Cerca de ti</button>
+            <button>Log in</button>
+        </div>
+    </header>
+    <div class="content"></div>
+
     
+    <footer>
+        <div class="logo2">Logo</div>
+        <div class="links">
+            <a href="./terminosycondiciones.html">Términos y condiciones</a>
+            <a href="#">Localización</a>
+            <a href="#">Acerca de nosotros</a>
+            <a href="#">Derechos reservados</a>
+        </div>
+    </footer>
 </body>
+
 </html>

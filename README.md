@@ -1,5 +1,6 @@
 # books-nest-grupo4
 
+<<<<<<< HEAD
 #41444B
 #52575D
 #FDDB3A
@@ -25,3 +26,13 @@
 - El hombre en busca de sentido: https://www.amazon.es/El-hombre-en-busca-sentido/dp/8425432022/ref=sr_1_13?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=VYVJEAWVAR7X&dib=eyJ2IjoiMSJ9.jwsH3EzocGpRw_Mxn_t3VZgYtIH_ZEEAyq36tMdUf_IOL7zY-cbHy9Ne-XikFlouXCFIyiG-KSESireVrPYo3OpVlLpqKgh9pveSuLZWUmKbqO1W8KmOpfvgzVZXDZgAxD8zorU8ucnDyHLQfYIfpw_UEw7eX1kGOx5kVS0i842AeC6Q2bxJ3JgVfeMoz_2vl5dVbOvwARsD-TCD6o3fVqeQNB5L5LCiO_U4LWEkzOs.hBEQ8cOKG1BOF25VFxZvwNPvK_JSIpBj8vQtySpb0RE&dib_tag=se&keywords=libros&qid=1738338505&s=books&sprefix=libro%2Cstripbooks%2C123&sr=1-13
 
 - Minimalismo emocional: https://www.amazon.es/Minimalismo-emocional-LIBROS-CABECERA-Fargas/dp/8419996165/ref=pd_sbs_d_sccl_3_6/262-2084158-4782164?pd_rd_w=cMjhe&content-id=amzn1.sym.62ea8a6e-5533-4fb8-ac84-61585eb8c5e6&pf_rd_p=62ea8a6e-5533-4fb8-ac84-61585eb8c5e6&pf_rd_r=YBG7BAPBGC61PT65JFAB&pd_rd_wg=j9ENv&pd_rd_r=c4f59f7b-4dee-418a-9633-7329e7b3c9f0&pd_rd_i=8419996165&psc=1
+=======
+# Paleta de colores
+
+Cinza 01:  #41444B
+Cinza 02:  #52575D
+Amarillo:  #FDDB3A
+Blanco:    #FFFFFF
+
+Fuente: Montserrat
+>>>>>>> 4f38b2b57b9c7097082d03518f078c295b068754

@@ -1,11 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
+
+    <style>
+        /* Reset CSS */
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+
+        }
+
+
+        /* Estilos del main-container */
+        .main-content {
+            font-family: Helvetica;
+            font-size: 10pt;
+            color: #41444B;
+        }
+
+
+
+        /* Estilos de la portada */
+
+        .portada {
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            width: 100vw;
+            background-color: #41444B;
+
+        }
+
+        .libros {
+            width: 100vw;
+            opacity: 80%;
+
+        }
+
+        .eslogan {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #F6F4E6;
+            text-align: center;
+            font-size: xx-large;
+            text-shadow: 2px 2px 5px #c1bbbb;
+        }
+
+        /* Estilos de las novedades */
+
+        .novedades {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            text-align: center;
+            font-size: medium;
+            margin-top: 80px;
+        }
+
+        .libro-novedad {
+            height: 400px;
+            padding: 20px;
+
+        }
+
+        .boton-catalogo {
+            background-color: #FDDB3A;
+            border-radius: 10px;
+            padding: 20px;
+            width: 200px;
+            color: #41444B;
+            text-decoration: none;
+            font-size: large;
+        }
+
+        .boton-catalogo:hover {
+            color: #FFFFFF;
+        }
+
+        /* Estilos del mapa */
+
+        .mapa {
+            display: flex;
+            flex-direction: column;
+            flex-basis: fit-content;
+            align-items: center;
+            gap: 40px;
+            text-align: center;
+            font-size: medium;
+            padding: 40px;
+            margin-top: 20px;
+            width: 100vw;
+        }
+
+        .imagenmapa{
+            background-color: #FDDB3A;
+            padding: 30px;
+            width: 1100px;
+            border-radius: 20px;
+            box-shadow: 2px 2px 5px #c1bbbb;
+            overflow-x: scroll;
+        }
+
+
+    </style>
 </head>
+
 <body>
+
+    <div class="main-content">
+
+        <div class="portada">
+            <img class="libros" src="./images/libros-portada.jpg" alt="Portada">
+            <h1 class="eslogan">¡Lee, comparte y guarda tus libros favoritos!</h1>
+
+        </div>
+
+        <div class="novedades">
+
+            <h2>Novedades</h2>
+
+            <div class="grid-container">
+                <img class="libro-novedad" src="./images/el-arte-de-la-guerra.jpg"
+                    alt="El arte de la el arte de la guerra">
+                <img class="libro-novedad" src="./images/redes.jpg" alt="Redes">
+                <img class="libro-novedad" src="./images/como-mandar-a-la-mierda-de-forma-educada.jpg"
+                    alt="Como mandar a la mierda de forma educada">
+                <img class="libro-novedad" src="./images/el-hombre-en-bysca-de-sentido.jpg"
+                    alt="El hombre en busca de sentido">
+
+            </div>
+
+            <a class="boton-catalogo" href="./catalogo.html">Catálogo</a>
     
+        </div>
+
+        <div class="mapa">
+
+            <h2>Libros cerca de ti</h2>
+            <img src="./images/mapa.jpg" alt="Cerca de ti" class="imagenmapa">
+
+        </div>
+
+
+
+    </div>
+
+
+
+
 </body>
+
 </html>

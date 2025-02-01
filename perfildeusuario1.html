@@ -5,85 +5,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        
         /*reset CSS*/
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
         }
+        a{
+            text-decoration: none;
+        }
+
         /*estilos perfil usuario*/
 
-            /*datos usuario*/
-            h1, h2, h3, h4, h5, h6, p{
-                font-family: Arial, Helvetica, sans-serif;
-                text-align: justify;
-            }
-            
+        .container{
+            display: flex;
+            flex-direction: column;
+            padding-left: 30px;
+            padding-right: 30px;
+            flex-grow: 1;
+            font-family: Helvetica;
+            font-size: 10pt;
+            color: #41444B;
+        }
+            #name {
+                width: 300px;
+                padding: 5px;
+                padding-left: 10px;
 
+                color: #FDDB3A;
+                border-radius: 5px;
+            }
+            #ciudad{
+                color: #52575D;
+                padding-left: 10px;
+                padding-top: 5px;
+                padding-bottom: 10px;
+            }
             .usuario{
                 display: flex;
                 justify-content: center space-between;
                 align-items: center;
                 gap: 30px;
                 padding-left: 100px;
-                padding-right: 100px;
+
             }
-
             .foto_perfil{
-
                 display: flex;
                 height: 200px;
+                flex: 1 1 30px; 
             }
 
             .datos_usuario{
-                height: 130px;
-
+                height: 170px;
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
+                padding-bottom: 50px;
             }
 
+            .scrollbox::-webkit-scrollbar {
+            display: none; /* Chrome, Edge, Safari */
+            }
 
+            .scrollbox{
+                overflow: auto;
+            }
 
-        .prestados{
+            .descripcion{
+                background-color: #fafafa;
+                border-radius: 5px;
+                height: 100px;
+                gap: 5px;
+                padding: 11px;
+                padding-top: 10px;
+                padding-left: 10px;
+                display: flex;
+
+                flex-direction: column;
+
+            }
+
+            /*prestados y adquiridos*/
+            
+
+            .contenido {
+            display:flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            flex: 1;
+            padding-top: 50px;
             padding-left: 100px;
             padding-right: 100px;
-        } 
+            gap: 10px;
+            }
 
-        .adquiridos{
-            padding-left: 100px;
-            padding-right: 100px;
-        }
+            .prestados, .adquiridos{
 
-        .grid-container{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        padding: 20px;
-        }
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            padding: 10px;
+            padding-left: 20px;
+            gap: 10px;
+            }         
+            
+            .grid-container{
+                display: flex;
+                flex-wrap: wrap;
+            }
+        
+            img{
+            border-radius: 5PX;
+            }
 
-        .card{
-        background-color: gray;
-        color: white;
-        padding: 20px;
+            .libro{
+                display: flex;
+                padding: 10px;
+                border-radius: 5px;
+                height: 300px;                
+            }
 
-        flex-grow: 1; /* permite al box crecer*/
-        flex-shrink: 0; /* permite hacerse más pequeño*/
-        flex-basis: 200px; /*valor inicial de nuestro elemento*/
+            .prestados img, .adquiridos img{
+                box-shadow: 2px 2px 8px #dddddd;
+            }
 
-        flex: 1 0 200px; /* esto es igual a las 3 reglas de arriba*/
-        }
+            .vacio{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border:5px solid #fafafa;
+                padding: 80px;
+            }
 
-        .Card{
-        box-shadow: 2px 2px 5px #bbbbbb;
-        margin: 5px;
-        border-radius: 5px; 
-        }
-
-        .libro{
-            height: 100px;
-        }
-
+            .cruz{
+                color:#fafafa;
+                display: flex;
+            }
 
     </style>
 </head>
@@ -98,52 +157,54 @@
         
         <!--Foto y descripción usuário-->
         <div class="usuario">
+            <div class="foto_perfil">
+                <img src="./images/FOTO_USUARIO.png" alt="foto_roberto">
+            </div>
 
-            <img class="foto_perfil"  src="./IMG_PERFILDEUSUARIO/FOTO_USUARIO.png" alt="foto_roberto">
 
 
             <div class="datos_usuario">
-                <h2>Roberto Morrón</h2>
-                <h3>Asturias</h3>
+                <h1 id="name">Roberto Morrón</h1>
+                <h4 id="ciudad">Asturias</h4>
                 <div class="descripcion">
                     <h4>Descripción</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta laborum, sed dignissimos alias quod molestiae eum vero neque fugit earum, accusamus vitae odio! Exercitationem distinctio dicta ipsum sapiente iste omnis?</p>
+                    <p class="scrollbox">Me llamo Roberto y soy de Asturias, una tierra de paisajes verdes y mar bravo que siempre me ha inspirado. Desde que tengo memoria, los libros han sido mi refugio y mi mejor compañía. Me apasiona el desarrollo personal, esa búsqueda constante de mejorar, aprender y crecer en cada aspecto de la vida.
+
+                    Siempre tengo un libro a mano, ya sea sobre hábitos, mentalidad, liderazgo o filosofía práctica. Me encanta descubrir nuevas ideas, aplicar pequeños cambios en mi día a día y ver cómo, poco a poco, cada aprendizaje suma. No hay nada como subrayar una frase que resuena conmigo o compartir con alguien una recomendación que sé que puede marcar la diferencia.
+                        
+                    Para mí, leer no es solo un pasatiempo, sino una forma de evolucionar. Cada página es un nuevo desafío, una invitación a pensar de otra manera y una oportunidad para acercarme a la mejor versión de mí mismo.       
+                    </p>
                 </div>
             </div>
 
         </div>
-        <!--Info libros-->
+        <div class="contenido">
+
+            <!--Info libros-->
         <div class="prestados">
             <H2>Prestados</H2>
-            <div class="section Card">
-                <div class="grid-container">
-                    <div class="card">tarjeta 1</div>
-                    <div class="card">tarjeta 2</div>
-                    <div class="card">tarjeta 3</div>
-                    <div class="card">tarjeta 4</div>
-                    <div class="card">tarjeta 5</div>
-                    <div class="card">tarjeta 6</div>
-                </div>
-            
+            <div class="grid-container">
+                <div class="libro"><img class="portada" src="./images/el-arte-de-la-guerra.jpg" alt=""></div>
+                <div class="libro"><img class="portada" src="./images/el-hombre-en-bysca-de-sentido.jpg" alt=""></div>
+                <div class="libro"><img class="portada" src="./images/en-la-interpretacion-de-tus-silencios.jpg" alt=""></div>
+                <div class="libro vacio portada"><a href="./Catalogo.html"><h1 class="cruz">&plus;</h1></a></div>
             </div>
 
         </div>
 
         <div class="adquiridos">
             <h2>Adquiridos</h2>
-            <div class="section Card">
-                <div class="grid-container">
-                    <div class="card"><img class="libro" src="./IMG_LIBROS/41+9KA2eMSL._SY445_SX342_.jpg" alt=""></div>
-                    <div class="card">tarjeta 2</div>
-                    <div class="card">tarjeta 3</div>
-                    <div class="card">tarjeta 4</div>
-                    <div class="card">tarjeta 5</div>
-                    <div class="card">tarjeta 6</div>
-                </div>
-            
+            <div class="grid-container">
+                <div class="libro"><img class="portada" src="./images/como-mandar-a-la-mierda-de-forma-educada.jpg" alt=""></div>
+                <div class="libro"><img class="portada" src="./images/un-lobo-dentro.jpg" alt=""></div>
+                <div class="libro"><img class="portada" src="./images/minimalismo-emocional.jpg" alt=""></div>
+                <div class="libro vacio portada"><a href="./Catalogo.html"><h1 class="cruz">&plus;</h1></a></div>
             </div>
 
         </div>
+
+        </div>
+        
 
         <!--Footer-->
         <div class="footer">

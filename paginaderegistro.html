@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+
+    <style>
+
+        .container {
+            display: flex;
+            flex-direction: column;
+          
+            width: 300px;
+            margin: 100px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .registro p{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 10px;
+
+        }
+
+        .registroBox{
+            border: 2px solid #FDDB3A;
+            border-radius: 5px;
+            padding: 5px;
+            width: 200px;
+            outline: none;
+        }
+
+        button {
+            border: solid 2px #FDDB3A;
+            border-radius: 5px;
+            padding: 5px 10px;
+            background-color: white;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <h2>Regístrate</h2>
+
+        <div>
+            <div class="registro">
+                <p>Nombre: 
+                    <input class="registroBox" type="text">
+                </p>
+                <p>Apellido: 
+                    <input class="registroBox" type="text">
+                </p>
+                <p>Email: 
+                    <input class="registroBox" type="text">
+                </p>
+                <p>Telefono: 
+                    <input class="registroBox" type="text">
+                </p>
+                <p>Dirección: 
+                    <input class="registroBox" type="text">
+                </p>
+                <p>Pais: 
+                    <input class="registroBox" type="text">
+                </p>
+            </div>
+            <div>
+                <button>Hecho</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    
+</body>
+</html>

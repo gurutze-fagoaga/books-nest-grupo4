@@ -24,7 +24,8 @@
             border: 2px solid #FDDB3A;
             border-radius: 10px;
             margin: 10px;
-            box-shadow: 2px 2px 5px; color: black;
+            box-shadow: 2px 2px 5px;
+            color: black;
 
         }
 
@@ -37,7 +38,7 @@
             gap: 15px;
         }
 
-        
+
         .nav-items input {
             padding: 10px 15px;
             border: 2px solid #FDDB3A;
@@ -45,11 +46,14 @@
             background-color: white;
             font-size: 14px;
             cursor: pointer;
-            box-shadow: 5px 2px 5px; color: black;
+            box-shadow: 5px 2px 5px;
+            color: black;
             width: 200px;
         }
-        .nav-items button {
-            border-radius: 10px; color: black;
+
+        .menu button a{
+            color: black;
+            text-decoration: none;
         }
 
         footer .links {
@@ -59,7 +63,7 @@
             font-size: 14px;
         }
 
-        .logo1{
+        .logo1 {
             height: 50px;
             display: flex;
 
@@ -69,26 +73,28 @@
         .content {
             display: flex;
         }
-        
-</style>
+
+
+    </style>
 </head>
 
 <body>
-
     <header>
-        <img class="logo1" src="./images/books nest.png">
+        <a href="./home.html"><img class="logo1" src="./images/books nest.png" /></a>
+
         <div class="nav-items">
-            <input type="text" placeholder="buscar..."></div>
-            <div>
-            <button>Catálogo</button>
-            <button>Novedades</button>
-            <button>Cerca de ti</button>
-            <button>Log in</button>
+            <input type="text" placeholder="buscar...">
+        </div>
+        <div class="menu">
+            <button><a href="./catalogo.html">Catálogo</a></button>
+            <button><a href="./home.html">Novedades</a></button>
+            <button><a href="./home.html">Cerca de ti</a></button>
+            <button><a href="./paginaderegistro.html">Log in</a></button>
         </div>
     </header>
     <div class="content"></div>
 
-    
+
     <footer>
         <img class="logo1" src="./images/books nest.png">
         <div class="links">

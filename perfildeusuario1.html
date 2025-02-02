@@ -24,12 +24,11 @@
         /*estilos perfil usuario*/
 
         .container{
+
             display: flex;
             flex-direction: column;
-            padding: 60px;
-            padding-bottom: 150px;
-            padding-left: 40px;
-            padding-right: 300px;
+            align-items: center;
+            justify-content: center;
             flex-grow: 1;
             font-family: Helvetica;
             font-size: 10pt;
@@ -51,16 +50,16 @@
             }
             .usuario{
                 display: flex;
-                justify-content: center space-between;
+                justify-content: center;
                 align-items: center;
+                padding-top: 60px;
                 gap: 30px;
                 padding-left: 100px;
-                padding-top: px;
 
             }
             .foto_perfil{
                 display: flex;
-                height: 200px;
+                height: 300px;
                 flex: 1 1 30px; 
             }
 
@@ -69,7 +68,6 @@
                 display: flex;
                 flex-direction: column;
                 padding-bottom: 50px;
-                padding-right: 500px;
             }
 
             .scrollbox::-webkit-scrollbar {
@@ -84,19 +82,25 @@
                 background-color: #fafafa;
                 border-radius: 5px;
                 height: 150px;
- 
+                width: 800px;
                 gap: 5px;
                 padding: 11px;
                 padding-top: 10px;
                 padding-left: 10px;
-
                 display: flex;
 
-                flex-direction: column;
+                flex-wrap: wrap;
 
             }
 
             /*prestados y adquiridos*/
+
+            .cat{
+                border:2px solid  #FDDB3A;
+                padding: 10px;
+                border-radius: 5px;
+                width: 130px;
+            }
 
         
             
@@ -106,10 +110,9 @@
             flex-direction: column;
             flex-wrap: wrap;
             flex: 1;
-            padding-top: 50px;
-            padding-left: 100px;
-            padding-right: 100px;
-            gap: 10px;
+            padding-top: 100px;
+            padding-bottom: 150px;
+            gap: 50px;
             align-items: center;
             justify-content: center;
             }
@@ -121,12 +124,13 @@
             flex-wrap: wrap;
             padding: 10px;
             padding-left: 20px;
-            gap: 10px;
+            gap: 30px;
             }         
             
             .grid-container{
                 display: flex;
                 flex-wrap: wrap;
+            gap: 30px;
             }
         
             img{
@@ -209,7 +213,7 @@
 
             <!--Info libros-->
             <div class="prestados">
-                <H2>Prestados</H2>
+                <H2 class="cat">Prestados</H2>
                 <div class="grid-container">
                     <div class="libro"><img class="portada" src="./images/el-arte-de-la-guerra.jpg" alt=""></div>
                     <div class="libro"><img class="portada" src="./images/el-hombre-en-bysca-de-sentido.jpg" alt=""></div>
@@ -219,7 +223,7 @@
             </div>
 
             <div class="adquiridos">
-                <h2>Adquiridos</h2>
+                <h2 class="cat">Adquiridos</h2>
                 <div class="grid-container">
                     <div class="libro"><img class="portada" src="./images/como-mandar-a-la-mierda-de-forma-educada.jpg" alt=""></div>
                     <div class="libro"><img class="portada" src="./images/un-lobo-dentro.jpg" alt=""></div>

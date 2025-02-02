@@ -12,12 +12,11 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 10px 20px;
-    background-color: #f1f1f1;
-    /*border: 2px solid #FDDB3A;
-    border-radius: 10px;
-    margin: 10px;*/
-    box-shadow: 2px 2px 5px; color: black;
+    background-color: #fffff;
+    margin: 10px;
+
 
 }
 
@@ -26,7 +25,7 @@ header {
 
 }
 
-.menu button a{
+.menu a{
     color: black;
     text-decoration: none;
     padding: 5px;
@@ -35,16 +34,16 @@ header {
 
 .nav-items input {
     padding: 10px 15px;
-    border: 2px solid #FDDB3A;
+    border: 1px solid #F6F4E6;
     border-radius: 5px;
-    background-color: white;
+    background-color: #F6F4E6;
     font-size: 14px;
     cursor: pointer;
-    box-shadow: 5px 2px 5px; color: black;
     width: 200px;
 }
-.nav-items button {
-    border-radius: 10px; color: black;
+
+footer{
+    background-color: #F6F4E6;
 }
 
 footer .links {
@@ -52,6 +51,15 @@ footer .links {
     justify-content: center;
     gap: 20px;
     font-size: 14px;
+}
+
+footer .links a{
+    text-decoration: none;
+    color: black;
+}
+
+footer .links a:hover{
+    color: #FDDB3A;
 }
 
 .logo1{
@@ -63,4 +71,15 @@ footer .links {
 
 .content {
     display: flex;
+}
+
+.menu a{
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    
+}
+.menu a:hover{
+    color: #FDDB3A;
+    
 }

@@ -11,36 +11,7 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Helvetica;
-            box-sizing: border-box;
-        }
 
-        header,
-        footer {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 10px 20px;
-            background-color: #f1f1f1;
-            border-radius: 10px;
-            margin: 10px;
-            box-shadow: 2px 2px 5px;
-            color: black;
-
-        }
-
-        .nav-items {
-            display: flex;
-            gap: 15px;
-        }
-
-        .content {
-            display: flex;
-        }
-          
         .book {
             display: flex;
             gap: 20px;
@@ -73,7 +44,7 @@
             color: white;
             border-radius: 20px;
             cursor: pointer;
-            
+
         }
 
         .view-more:hover {
@@ -92,31 +63,43 @@
             border-radius: 10px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
+    
+        }
+
+        .filters a {
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            color: black;
+        }
+
+        .filters a:hover {
+            color: #FDDB3A;
         }
 
         .portada {
-    width: 200px;
-    height: 300px;
-    max-height: 300px; 
-    object-fit: cover;
-    border-radius: 4px;
+            width: 200px;
+            height: 300px;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 4px;
         }
-    
     </style>
 </head>
 
 <body>
 
     <header>
-        <img class="logo1" src="./images/books nest.png">
+        <a href="./home.html"><img class="logo1" src="./images/books nest.png" /></a>
+
         <div class="nav-items">
             <input type="text" placeholder="buscar...">
         </div>
-        <div>
-            <button>Catálogo</button>
-            <button>Novedades</button>
-            <button>Cerca de ti</button>
-            <button>Log in</button>
+        <div class="menu">
+            <a href="./catalogo.html">Catálogo</a>
+            <a href="./home.html">Novedades</a>
+            <a href="./home.html">Cerca de ti</a>
+            <a href="./paginaderegistro.html">Log in</a>
         </div>
     </header>
 
@@ -125,17 +108,27 @@
         <div class="filters">
             <div>
                 <strong>Categorías:</strong>
-                <p>Ficción:</p>
-                <p>Novelas:</p>
-                <p>Histórico</p>
+                <a href="#">Ficción</a>
+                <a href="#">Novela histórica</a>
+                <a href="#">Comics</a>
+                <a href="#">Autoayuda</a>
             </div>
             <div>
                 <strong>Edades:</strong>
-                Infantil +5, Infantil +10, 12-15, Adultos
+                <a href="#">Infantil +5</a>
+                <a href="#">Infantil +10</a>
+                <a href="#">Juvenil</a>
+                <a href="#">Adultos</a>
             </div>
             <div>
-                <strong>Idiomas:</strong><br>
-                Español, Inglés, Francés, Portugués
+                <strong>Idiomas:</strong>
+                <a href="#">Español</a>
+                <a href="#">Inglés</a>
+                <a href="#">Francés</a>
+                <a href="#">Catalán</a>
+                <a href="#">Portugués</a>
+                <a href="#">Euskera</a>
+
             </div>
         </div>
 
@@ -143,7 +136,7 @@
 
         <div class="book">
             <img src="./images/el-arte-de-la-guerra.jpg" alt="libro1" class="portada">
-        
+
             <div class="book-details">
                 <strong><u>El arte de la guerra.</u></strong><br>
                 <b>Prestado por:</b> Gurutze faogaga<br>
@@ -198,6 +191,7 @@
             <a href="#">Derechos reservados</a>
         </div>
     </footer>
+
 </body>
 
 </html>

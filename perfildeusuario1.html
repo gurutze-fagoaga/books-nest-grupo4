@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Perfil usuario</title>
+
+    <link rel="stylesheet" href="style.css">
+
     <style>
         
         /*reset CSS*/
@@ -23,8 +26,10 @@
         .container{
             display: flex;
             flex-direction: column;
-            padding-left: 30px;
-            padding-right: 30px;
+            padding: 60px;
+            padding-bottom: 150px;
+            padding-left: 40px;
+            padding-right: 300px;
             flex-grow: 1;
             font-family: Helvetica;
             font-size: 10pt;
@@ -50,6 +55,7 @@
                 align-items: center;
                 gap: 30px;
                 padding-left: 100px;
+                padding-top: px;
 
             }
             .foto_perfil{
@@ -63,6 +69,7 @@
                 display: flex;
                 flex-direction: column;
                 padding-bottom: 50px;
+                padding-right: 500px;
             }
 
             .scrollbox::-webkit-scrollbar {
@@ -76,11 +83,13 @@
             .descripcion{
                 background-color: #fafafa;
                 border-radius: 5px;
-                height: 100px;
+                height: 150px;
+ 
                 gap: 5px;
                 padding: 11px;
                 padding-top: 10px;
                 padding-left: 10px;
+
                 display: flex;
 
                 flex-direction: column;
@@ -88,6 +97,8 @@
             }
 
             /*prestados y adquiridos*/
+
+        
             
 
             .contenido {
@@ -144,16 +155,33 @@
                 display: flex;
             }
 
+
+
     </style>
 </head>
 <body>
 
+            <!--Header-->
+            <div class="header">
+                <header>
+                    <a href="./home.html"><img class="logo1" src="./images/books nest.png" /></a>
+            
+                    <div class="nav-items">
+                        <input type="text" placeholder="buscar...">
+                    </div>
+                    <div class="menu">
+                        <button><a href="./catalogo.html">Catálogo</a></button>
+                        <button><a href="./home.html">Novedades</a></button>
+                        <button><a href="./home.html">Cerca de ti</a></button>
+                        <button><a href="./paginaderegistro.html">Log in</a></button>
+                    </div>
+                </header>
+    
+            </div>
+
     <div class="container">
 
-        <!--Header-->
-        <div class="header">
 
-        </div>
         
         <!--Foto y descripción usuário-->
         <div class="usuario">
@@ -180,6 +208,9 @@
         </div>
         <div class="contenido">
 
+            <hr>
+            <hr>
+
             <!--Info libros-->
         <div class="prestados">
             <H2>Prestados</H2>
@@ -203,17 +234,24 @@
 
         </div>
 
-        </div>
-        
-
-        <!--Footer-->
-        <div class="footer">
-
-        </div>
-
-        
+    </div>
 
     </div>
+
+            <!--Footer-->
+        <div class="footer">
+
+            <footer>
+                <img class="logo1" src="./images/books nest.png">
+                <div class="links">
+                    <a href="./terminosycondiciones.html">Términos y condiciones</a>
+                    <a href="#">Localización</a>
+                    <a href="#">Acerca de nosotros</a>
+                    <a href="#">Derechos reservados</a>
+                </div>
+            </footer>
+
+        </div>
 
 
     

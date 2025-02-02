@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalogo</title>
 
+    <link rel="stylesheet" href="style.css">
+
     <style>
         body {
             margin: 0;
@@ -16,50 +18,29 @@
             box-sizing: border-box;
         }
 
+        header,
+        footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #f1f1f1;
+            border-radius: 10px;
+            margin: 10px;
+            box-shadow: 2px 2px 5px;
+            color: black;
+
+        }
+
         .nav-items {
             display: flex;
             gap: 15px;
         }
 
-
-        .nav-items input {
-            padding: 10px 15px;
-            border: 2px solid #FDDB3A;
-            border-radius: 5px;
-            background-color: white;
-            font-size: 14px;
-            cursor: pointer;
-            box-shadow: 5px 2px 5px;
-            color: black;
-            width: 200px;
-        }
-
-        .nav-items button {
-            border-radius: 10px;
-            color: black;
-        }
-
-        footer .links {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            font-size: 14px;
-        }
-
-        .logo1 {
-            height: 50px;
-            display: flex;
-
-        }
-
-
         .content {
             display: flex;
         }
           
-
-
-
         .book {
             display: flex;
             gap: 20px;
@@ -143,11 +124,13 @@
     <main>
         <div class="filters">
             <div>
-                <strong>Categorías:</strong><br>
-                Ficción, Novelas, Histórico
+                <strong>Categorías:</strong>
+                <p>Ficción:</p>
+                <p>Novelas:</p>
+                <p>Histórico</p>
             </div>
             <div>
-                <strong>Edades:</strong><br>
+                <strong>Edades:</strong>
                 Infantil +5, Infantil +10, 12-15, Adultos
             </div>
             <div>
@@ -156,8 +139,6 @@
             </div>
         </div>
 
-        <hr>
-        <hr>
 
 
         <div class="book">

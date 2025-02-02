@@ -1,11 +1,235 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <title>PRUEBA HEADER Y FOOTER</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Helvetica;
+            box-sizing: border-box;
+        }
+
+        header,
+        footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #f1f1f1;
+            border: 2px solid #FDDB3A;
+            border-radius: 10px;
+            margin: 10px;
+            box-shadow: 2px 2px 5px;
+            color: black;
+
+        }
+
+        .nav-items {
+            display: flex;
+            gap: 15px;
+        }
+
+
+        .nav-items input {
+            padding: 10px 15px;
+            border: 2px solid #FDDB3A;
+            border-radius: 5px;
+            background-color: white;
+            font-size: 14px;
+            cursor: pointer;
+            box-shadow: 5px 2px 5px;
+            color: black;
+            width: 200px;
+        }
+
+        .nav-items button {
+            border-radius: 10px;
+            color: black;
+        }
+
+        footer .links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-size: 14px;
+        }
+
+        .logo1 {
+            height: 50px;
+            display: flex;
+
+        }
+
+
+        .content {
+            display: flex;
+        }
+          
+
+
+
+        .book {
+            display: flex;
+            gap: 20px;
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .book-cover {
+            width: 150px;
+            height: 140px;
+            background-color: #ddd;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .book-details {
+            flex: 1;
+        }
+
+        .view-more {
+            padding: 8px 15px;
+            border: none;
+            background-color: #FDDB3A;
+            color: white;
+            border-radius: 20px;
+            cursor: pointer;
+            
+        }
+
+        .view-more:hover {
+            background-color: #005bb5;
+        }
+
+        main {
+            padding: 20px 30px;
+        }
+
+        .filters {
+            display: flex;
+            justify-content: space-around;
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .portada {
+    width: 200px;
+    height: 300px;
+    max-height: 300px; 
+    object-fit: cover;
+    border-radius: 4px;
+        }
     
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img class="logo1" src="./images/books nest.png">
+        <div class="nav-items">
+            <input type="text" placeholder="buscar...">
+        </div>
+        <div>
+            <button>Catálogo</button>
+            <button>Novedades</button>
+            <button>Cerca de ti</button>
+            <button>Log in</button>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="filters">
+            <div>
+                <strong>Categorías:</strong><br>
+                Ficción, Novelas, Histórico
+            </div>
+            <div>
+                <strong>Edades:</strong><br>
+                Infantil +5, Infantil +10, 12-15, Adultos
+            </div>
+            <div>
+                <strong>Idiomas:</strong><br>
+                Español, Inglés, Francés, Portugués
+            </div>
+        </div>
+
+        <hr>
+        <hr>
+
+
+        <div class="book">
+            <img src="./images/el-arte-de-la-guerra.jpg" alt="libro1" class="portada">
+        
+            <div class="book-details">
+                <strong><u>El arte de la guerra.</u></strong><br>
+                <b>Prestado por:</b> Gurutze faogaga<br>
+                <b>Categoría:</b> Ficción<br>
+                <b>Sinopsis:</b> Un breve resumen del contenido...
+                <button class="view-more">Ver más</button>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="./images/el-hombre-en-bysca-de-sentido.jpg" alt="libro2" class="portada">
+            <div class="book-details">
+                <strong><u>El hombre en busca de el sentido.</u></strong><br>
+                <b>Prestado por:</b> Ramón vargas<br>
+                <b>Categoría:</b> Novela<br>
+                <b>Sinopsis:</b> Un breve resumen del contenido...
+                <button class="view-more">Ver más</button>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="./images/en-la-interpretacion-de-tus-silencios.jpg" alt="libro3" class="portada">
+            <div class="book-details">
+                <strong><u>En la interpretación de tus silencios.</u></strong><br>
+                <b>Prestado por:</b> Brian fernández<br>
+                <b>Categoría:</b> Histórico<br>
+                <b>Sinopsis:</b> Un breve resumen del contenido...
+                <button class="view-more">Ver más</button>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="./images/como-mandar-a-la-mierda-de-forma-educada.jpg" alt="libro4" class="portada">
+            <div class="book-details">
+                <strong><u>Como mandar a la mierda de forma educada.</u></strong><br>
+                <b>Prestado por:</b> Ana freitas<br>
+                <b>Categoría:</b> Histórico<br>
+                <b>Sinopsis:</b> Un breve resumen del contenido...
+                <button class="view-more">Ver más</button>
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer>
+        <img class="logo1" src="./images/books nest.png">
+        <div class="links">
+            <a href="./terminosycondiciones.html">Términos y condiciones</a>
+            <a href="#">Localización</a>
+            <a href="#">Acerca de nosotros</a>
+            <a href="#">Derechos reservados</a>
+        </div>
+    </footer>
 </body>
+
 </html>

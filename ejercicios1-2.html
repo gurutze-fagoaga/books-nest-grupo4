@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .BotonRojo {
+            background-color: red;
+        }
+
+        .BotonAzul {
+            background-color: blue;
+            color: white;
+        }
+
+        .Texto {
+            margin-top: 10px;
+            padding: 10px;
+            width: 200px;
+            border: solid 1px black;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="BotonColores">Colores</button>
+    <button class="BotonRojo" id="BotonRojo">Rojo</button>
+    <button class="BotonAzul" id="BotonAzul">Azul</button>
+    <div class="Texto" id="Texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque sequi, debitis culpa
+        blanditiis nisi excepturi consectetur voluptatem eum placeat et autem rem magni itaque exercitationem hic quia
+        dicta corporis maxime.</div>
+
+
+    <div id="TextoOculto" class="Texto">Pasar el mouse por encima</div>
+
+
+
+    <script>
+        const btnColores = document.querySelector("#BotonColores");
+        const botonRojo = document.querySelector("#BotonRojo");
+        const botonAzul = document.querySelector("#BotonAzul");
+        const cajaDeTexto = document.querySelector("#Texto");
+        const cajaDeTextoOculto = document.querySelector("#TextoOculto");
+
+        const listaColores = ["lightgreen", "lightblue", "lightcoral", "lightseablue", "lightpink"];
+        let colorId = 0;
+        const mensaje = "Hola";
+
+        btnColores.addEventListener("click", cambiarColorSimple);
+
+        botonAzul.addEventListener("click", () => {
+            cambiarColor("blue", "white");
+        });
+        botonRojo.addEventListener("click", () => {
+            cambiarColor("red", "white");
+        });
+
+        function cambiarColor(color1, color2) {
+            cajaDeTexto.style.background = color1;
+            cajaDeTexto.style.color=color2;
+        }
+
+        cajaDeTextoOculto.addEventListener("mouseover", () => {
+            cajaDeTextoOculto.innerText = mensaje;
+        })
+        cajaDeTextoOculto.addEventListener("mouseout", () => {
+            cajaDeTextoOculto.innerText = "Pasar el mouse por encima";
+        })
+
+        function cambiarColorSimple(){
+            
+            cajaDeTexto.style.background = listaColores[colorId];
+            colorId++;
+            if(colorId==listaColores.length){
+                colorId=0;
+            }
+       
+        }
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

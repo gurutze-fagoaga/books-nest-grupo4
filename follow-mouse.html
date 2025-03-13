@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Follow</title>
+
+    <style>
+        body{
+            margin: 0;
+            overflow: hidden;
+            background-color: white;
+
+        }
+
+        .rastro{
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            border-radius: 50%;
+
+            pointer-events: none;
+            transform: translate(-50%, -50%);
+            opacity: 0.7;
+            transition: opacity 0.5s;
+
+        }
+    </style>
+</head>
+<body>
+
+
+    <script>
+        document.addEventListener("mousemove", (e) => {
+            const rastro = document.createElement("div");
+            rastro.classList="rastro";
+            rastro.style.left=e.clientX +"px";
+            rastro.style.top=e.clientY + "px";
+            document.body.appendChild(rastro);
+
+            setTimeout(()=>{
+                rastro.style.opacity="0";
+
+                setTimeout(()=>rastro.remove(), 500);
+
+                //hacer algo
+            }, 100); // a los 100 milisegundos
+        })
+    </script>
+    
+</body>
+</html>
